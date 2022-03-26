@@ -1,0 +1,82 @@
+:root{
+    --main-color:rgba(44, 44, 84,1.0);
+    --main-color-light:rgba(44, 44, 84,0.5);
+    --accent-color:rgba(45, 52, 54,1.0);
+    --accent-color-light:rgba(197, 182, 207, 0.938);
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'EB Garamond', serif;
+    background-image:linear-gradient(to bottom right,var(--main-color),
+    var(--accent-color-light));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.main-title{
+    font-size: 3rem;
+    color:var(--main-color) ;
+
+}
+.header,.gorev-form{
+    min-height: 20vh;
+    margin:0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-item{
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color:var(--accent-color-light) ;
+    outline: none;
+}
+.btn-gorev-ekle{
+    color:var(--main-color) ;
+    cursor:cell;
+}
+.btn-gorev-ekle:hover{
+    color: var(--accent-color-light);
+    background-color: var(--main-color);
+}
+.gorev-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gorev-listesi{
+    list-style: none;
+    min-width: 40%;
+    padding: 1rem;
+}
+.gorev-item{
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 2rem;
+}
+.gorev-btn, .gorev-tanim{
+    background-color:rgba(32, 129, 69, 0.295);
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: var(--main-color);
+    flex:1;
+    float: left;
+}
+.gorev-btn-sil{
+    background-color: rgba(190, 5, 5, 0.356);
+}
+.gorev-btn:hover{
+    background-color:rgba(32, 129, 69, 1);
+    color:var(--accent-color-light);
+}
+.gorev-btn-sil:hover{
+    background-color: rgba(190, 5, 5, 1);
+    color:var(--accent-color-light);
+}
