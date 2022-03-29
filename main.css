@@ -35,10 +35,12 @@ body{
     background-color:var(--accent-color-light) ;
     outline: none;
 }
+
 .btn-gorev-ekle{
     color:var(--main-color) ;
     cursor:cell;
 }
+
 .btn-gorev-ekle:hover{
     color: var(--accent-color-light);
     background-color: var(--main-color);
@@ -51,24 +53,34 @@ body{
 .gorev-listesi{
     list-style: none;
     min-width: 40%;
-    padding: 1rem;
 }
 .gorev-item{
+    display:flex;
     justify-content: center;
     align-items: center;
     margin: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    background-color:var(--accent-color-light) ;
+    color: var(--main-color);
+    transition: .2s ease-in-out;
 }
-.gorev-btn, .gorev-tanim{
+.gorev-tanim{
+    flex:1;
+    padding: 0.5rem;
+}
+.gorev-btn{
     background-color:rgba(32, 129, 69, 0.295);
     outline: none;
     border: none;
     font-size: 1.2rem;
-    padding: 0.5rem;
+    padding: 0.8rem;
     color: var(--main-color);
-    flex:1;
-    float: left;
 }
+.gorev-tamamlandi{
+    text-decoration: line-through;
+    opacity:0.5;
+}
+
 .gorev-btn-sil{
     background-color: rgba(190, 5, 5, 0.356);
 }
@@ -79,4 +91,11 @@ body{
 .gorev-btn-sil:hover{
     background-color: rgba(190, 5, 5, 1);
     color:var(--accent-color-light);
+} 
+.far{
+    pointer-events:none;
+    
+}
+.kaybol{
+    transform: scale(0);
 }
